@@ -30,7 +30,7 @@ To add a thumbnail for a map all you have to do is.
 ## Adding and editing events
 
 ## Adding events
-To add a event you must first know what type of event you want to add, currently there are 3 events that can be added `OnKillerTouched, OnSurvivorTouched, OnActorTouched`. Here is a simple explanation of how every event works and how to use it.
+To add a event you must first know what type of event you want to add, currently there are 3 events that can be added `OnKillerTouched, OnSurvivorTouched, OnActorTouched` (This does not mean that there can only be 3 events in one map, you can add more events by naming them differently or not, it really doesn't matter). Here is a simple explanation of how every event works and how to use it.
 
 And just before we start. `ToTouchInstance` is a `ObjectValue` inside the event that is used for some events and its only purpose is to tell the `EventsHandler` script which event should be triggered. A `ToTouchInstance` should look like this.
 ![alt text](https://github.com/nextalksv2/Forsaken-Tools/blob/main/MiscAssets/ToTouchInstance.png?raw=true)
@@ -38,4 +38,22 @@ And just before we start. `ToTouchInstance` is a `ObjectValue` inside the event 
 ## Events
 
 - OnKillerTouched  
-This event requires a `ToTouchInstance` inside with a value of what part the event should be triggered after touching
+This event requires a `ToTouchInstance` inside with a value of what part the event should be triggered after touching and this event only triggers when a Killer steps on a part.
+- OnSurvivorTouched  
+This event requires a `ToTouchInstance` inside with a value of what part the event should be triggered after touching and this event only triggers when a Survivor steps on a part.
+- OnActorTouched  
+This event requires a `ToTouchInstance` inside with a value of what part the event should be triggered after touching and this event only triggers when a player (Survivor or Killer) steps on a part.
+
+## Adding and editing functions
+
+Functions are the actual stuff that happens when a event is triggered. As of right now there are sadly only 2 functions because there really in my opinion aren't any more functions needed to make a map. Anyways before i show the 2 functions i want to explain how a function works and how to use it, for example. This is a stun event (thats what i called it, its not a real event its just a display name). As you can see there is a function inside called ApplyStatus which is a ObjectValue and inside that function there are 4 attributes `Duration, Hidden, Level, Status` this function well applies a status to the actor (player) that steps on the stun part
+![alt text](https://github.com/nextalksv2/Forsaken-Tools/blob/main/MiscAssets/StunExample.png?raw=true)
+
+### Something to note is that there can be multiple functions in one event.
+
+## Functions
+
+- ApplyStatus  
+This function is quite straight forward its a `ObjectValue` that requires only 3 attributes `Status` being the status name, `Duration` being the duration for which the player will have the status for (in seconds) and `Level` being the status level. Optionally you can also add another attribute `Hidden` which basically hides the status effect from the player.
+- KillActor  
+Kills the actor (player), duh
