@@ -1,4 +1,4 @@
-# A short documentation of maps in Forsaken Tools
+# A short documentation for maps in Forsaken Tools
 
 You can find help with any questions or problems in the official [discord server](https://youtu.be/xvFZjo5PgG0?list=RDxvFZjo5PgG0)
 
@@ -26,3 +26,16 @@ To add a thumbnail for a map all you have to do is.
 2. Upload your thumbnail to roblox.
 3. Copy the asset id.
 4. Paste the asset id into the `RenderImage` attribute.
+
+## Adding and editing events
+
+## Adding events
+To add a event you must first know what type of event you want to add, currently there are 3 events that can be added `OnKillerTouched, OnSurvivorTouched, OnActorTouched`. Here is a simple explanation of how every event works and how to use it.
+
+And just before we start. `ToTouchInstance` is a `ObjectValue` inside the event that is used for some events and its only purpose is to tell the `EventsHandler` script which event should be triggered. A `ToTouchInstance` should look like this.
+![alt text](https://github.com/nextalksv2/Forsaken-Tools/blob/main/MiscAssets/ToTouchInstance.png?raw=true)
+
+## Events
+
+- OnKillerTouched  
+This event requires a `ToTouchInstance` inside with a value of what part the event should be triggered after touching
