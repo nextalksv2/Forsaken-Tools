@@ -21,6 +21,8 @@ To add a thumbnail for a map all you have to do is.
 2. Next find a good spot for a thumbnail
 3. Change the type of the resolution to `Physical Size`
 4. Take a screenshot, inside the `VIEW` tab
-![alt text](https://github.com/nextalksv2/Forsaken-Tools/blob/main/MiscAssets/ScreenshotButton.png?raw=true)
 - Next step is to upload the thumbnail to roblox
-1. 
+1. Your screenshot can be found in `C:\Users\youruser\Pictures\Roblox`
+2. Upload your thumbnail to roblox.
+3. Copy the asset id.
+4. Paste the asset id into the `RenderImage` attribute.
