@@ -4,7 +4,7 @@ You can find help with any questions or problems in the official [discord server
 
 ## Basic configuration
 
-Each map has should have a be in a folder, which contains all of the map including its events and other stuff. In the folder there should be 3 attributes, ``MapName, MapCreators, RenderImage``
+Each map has should have be a folder, which contains all of the map including its events and other stuff. In the folder there should be 3 attributes, ``MapName, MapCreators, RenderImage``
 ![alt text](https://github.com/nextalksv2/Forsaken-Tools/blob/main/MiscAssets/MapAttributes.png?raw=true)
 
 ## Adding map creators/contributors
