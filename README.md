@@ -1,6 +1,6 @@
 # A short documentation of maps in Forsaken Tools
 
-You can find help with any questions or problems in the official discord server [server](https://youtu.be/xvFZjo5PgG0?list=RDxvFZjo5PgG0)
+You can find help with any questions or problems in the official [discord server](https://youtu.be/xvFZjo5PgG0?list=RDxvFZjo5PgG0)
 
 ## Basic configuration
 
