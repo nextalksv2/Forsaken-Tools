@@ -4,13 +4,29 @@ You can find help with any questions or problems in the official [discord server
 
 ## Basic configuration
 
-Each map has should be a folder, which contains the map including its events and other stuff. In the folder there should be 3 attributes, ``MapName, MapCreators, RenderImage``
-![alt text](https://github.com/nextalksv2/Forsaken-Tools/blob/main/MiscAssets/MapAttributes.png?raw=true)
+Each map has should be a folder, which contains the map including its events and other stuff. In the folder there should be 3 attributes, ``MapName, MapCreators, RenderImage, AmbienceID, CanJump``
+![alt text](https://github.com/nextalksv2/Forsaken-Tools/blob/main/MiscAssets/NewMapOptions.png?raw=true)
 
 ## Adding map creators/contributors
 
 Adding map creators/contributors is really easy, all you have to do is type a players username or userid, and to add multiple creators you can separate them by a comma like this (with no spaces of course)
 ![alt text](https://github.com/nextalksv2/Forsaken-Tools/blob/main/MiscAssets/MapCreators.png?raw=true)
+
+## What is ``CanJump``
+
+``CanJump`` is a attribute that when set to true players will be able to jump on the map. Just so that some people dont think that this attribute means that the **map** can jump.
+
+## Adding map ambience
+
+In the ``AmbienceID`` attribute you can put any sound id you want, but make sure that the sound id public and can be used be other users. Or you could use a forsaken ambience
+- Yorick's resting place ``134816263052711``
+- Pirate bay ``115429958347275``
+- Horror hotel ``94877649807774``
+- Glass houses ``116648874354780``
+- Brandon works ``83891000744628``
+- Planet voss ``82047489758400``  
+
+alternatively you could just leave the ``AmbienceID`` blank and the game will use the default ambience
 
 ## Adding a map render image/thumbnail
 
