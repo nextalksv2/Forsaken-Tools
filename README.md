@@ -73,3 +73,14 @@ Functions are the actual stuff that happens when a event is triggered. As of rig
 This function is quite straight forward its a `ObjectValue` that requires only 3 attributes `Status` being the status name, `Duration` being the duration for which the player will have the status for (in seconds) and `Level` being the status level. Optionally you can also add another attribute `Hidden` which basically hides the status effect from the player.
 - KillActor  
 Kills the actor (player), duh
+
+## Whitelisting a map
+
+To whitelist a map, all you have to do is
+
+- Before you publish / whitelist a map first check if your map looks something like this ``Buttons`` and ``Misc`` folders are not important and can be deleted unless you have some important stuff inside like map parts and parts that are tied to events.
+![alt text](https://github.com/nextalksv2/Forsaken-Tools/blob/main/MiscAssets/BeforeExport.png?raw=true)
+- Publish your map to roblox, **DO NOT** publish the model called **Map** publish the folder with your map name.
+- **Make sure that your map that you've published is set to public or else the map will NOT be added, you can make a map public by setting Distribute on Creator Store to true in the maps configuration on the roblox website**
+- Join your Forsaken Tools private server or create a private server if you don't have one already
+- Open the command panel and click on the ``Whitelist`` button, it will take a while but you will be teleported to another game in which you will be able to whitelist your map.
